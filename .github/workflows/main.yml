@@ -28,9 +28,11 @@ jobs:
         with:
             persist-credentials: false
       - name: Install and Build
+        env:
+          CI: false
         run: |
-            yarn install
-            yarn run build
+            npm install
+            npm run build
       - name: Deploy # 将打包内容发布到 github page
         uses: JamesIves/github-pages-deploy-action@4.1.5 # actions
         with:  # 自定义环境变量
