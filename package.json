@@ -62,5 +62,5 @@
   "lint-staged": {
     "*.{js,css,md,ts,tsx}": "prettier --write"
   },
-  "homepage": "https://Carlos-Handsome-TJ.github.io/github-actions-demo"
+  "homepage": "https://carlos-handsome-tj.github.io/CI-demo"
 }
