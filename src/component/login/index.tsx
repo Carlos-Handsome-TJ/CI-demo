@@ -1,12 +1,21 @@
 import * as React from "react";
 import { Form, Input, Button, Checkbox } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
+import { Router } from "react-router-dom";
 import styled from "styled-components";
 import Bg_login2 from "../../assets/images/bg_login2.jpg";
 
+type LoginValue = {
+  username: string;
+  password: string;
+  remember: boolean;
+};
 const Login = () => {
-  const onFinish = (values: any) => {
+  const onFinish = (values: LoginValue) => {
     console.log("Received values of form: ", values);
+    const { username, password, remember } = values;
+    if (username === "mengping" && password === "19960619") {
+    }
   };
   return (
     <Body>
