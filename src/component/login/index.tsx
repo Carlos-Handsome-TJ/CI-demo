@@ -19,7 +19,7 @@ const Login = () => {
   return (
     <Body>
       <LoginContainer>
-        <Title>欢迎登录小可爱的网站2222</Title>
+        <Title>欢迎登录小可爱的网站</Title>
         <Form
           name="normal_login"
           className="login-form"
