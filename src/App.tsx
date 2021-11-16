@@ -7,9 +7,10 @@ function App() {
   return (
     <div>
       2222这是写给她的一封情书
+      <Login />
       <Routes>
-        <Route path={"/"} element={<Login />} />
-        <Route path={"/home"} element={<Home />} />
+        {/*<Route path={"/"} element={<Login />} />*/}
+        {/*<Route path={"/home"} element={<Home />} />*/}
       </Routes>
     </div>
   );
