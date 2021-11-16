@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useNavigate } from "react-router-dom";
 import { Form, Input, Button, Checkbox } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import styled from "styled-components";
@@ -10,10 +11,12 @@ type LoginValue = {
   remember: boolean;
 };
 const Login = () => {
+  const navigator = useNavigate();
   const onFinish = (values: LoginValue) => {
     console.log("Received values of form: ", values);
     const { username, password } = values;
     if (username === "mengping" && password === "19960619") {
+      navigator("/home");
     }
   };
   return (
@@ -100,4 +103,4 @@ const Title = styled.h1`
   color: skyblue;
 `;
 
-export default Login;
+export default React.memo(Login);
