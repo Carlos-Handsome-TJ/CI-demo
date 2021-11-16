@@ -6,6 +6,7 @@ import Home from "component/home";
 function App() {
   return (
     <div>
+      2222
       <Routes>
         <Route path={"/"} element={<Login />} />
         <Route path={"/home"} element={<Home />} />
